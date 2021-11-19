@@ -13,7 +13,7 @@ The file contains an HTML document and CSS document, as well as additional image
         |-- css
             |--stlye.css
         |-- images
-            |-- four .jpg files and three .png files
+            |-- four .jpg files and three .png files (and an addtional .jpg /for the READ me file)
 ```
 
 ## Cloning the repo
@@ -25,8 +25,8 @@ The file contains an HTML document and CSS document, as well as additional image
 3. Open Git Bash and enter the following steps
 
 ```
-git cd [location of where you would like directory places]
-git clone https://github.com/chris-backes/urban-octo-telegram-v2.git
+git cd [location of where you would like directory placed locally]
+git clone https://github.com/coding-boot-camp/urban-octo-telegram.git
 ```
 
 ## Remote Site
@@ -53,4 +53,4 @@ To:
 
 ## Screenshot
 
-![Horiseon Screenshot]
+![Horiseon Screenshot](./Develop/assets/images/website.jpeg)
