@@ -7,8 +7,10 @@ The file contains an HTML document and CSS document, as well as additional image
 ## Structure
 
 ```
-|-- assets
 |-- index.html
+|-- .gitignore
+|-- README
+|-- assets
     |-- css
         |--stlye.css
     |-- images
