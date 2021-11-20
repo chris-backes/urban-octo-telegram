@@ -1,13 +1,14 @@
+/*Universal Selector--changes the formatting of the entire page*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
+/*Element Selector-Body--changes the formatting of everything contianed within the body tag.*/
 body {
   background-color: #d9dcd6;
 }
-
+/*Element Selector-Header--changes the formatting of everything contianed within the header tags.*/
 header {
   padding: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -15,43 +16,42 @@ header {
   background-color: #2a607c;
   color: #ffffff;
 }
-
+/*Element Selector within a Element selector--only changes the formatting of what is contained within h1 tags within the header tags*/
 header h1 {
   display: inline-block;
   font-size: 48px;
 }
-
-header h1 .seo {
+/*Class Selector--only appears within the header h1 elements (those two elements were there previously, and were not needed*/
+.seo {
   color: #d9dcd6;
 }
-
-header div {
+/*Element Selector within Element Selector, like header h1 above*/
+header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
 }
-/*Calibri needed quotes around it.*/
-header div ul {
+/*Element Selector within an Element Selector within an Element Selector, used to style the list*/
+header nav ul {
   list-style-type: none;
 }
-
-header div ul li {
+/*Element Selector within an Element Selector within an Element Selector within an Element Selctor, used to style the items of the list*/
+header nav ul li {
   display: inline-block;
   margin-left: 25px;
 }
-/*All of the header class styles were renamesd to reflect taht header is now an element and not a class*/
-a {
+/*Element Selector... I added the elements prior to it because although the <a> only appears in the header, any <a> that may get added in the future would not be automotically definied by this*/
+header nav ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-
+/*Element selector for all p tags.*/
 p {
   font-size: 16px;
 }
-
+/*Class selector--formats the image that appears below the header*/
 .hero {
   height: 800px;
   width: 100%;
@@ -60,7 +60,22 @@ p {
   background-size: cover;
   background-position: center;
 }
+/*Class Selector: formats the content appearing in the right side portion of the body*/
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
 
+.content article {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+/*Class Selectors (float left and float right): some of the articles in the .content section are formatted with the images on the left and some on the right. These two fromat each of those two*/
 .float-left {
   float: left;
   margin-right: 25px;
@@ -71,36 +86,15 @@ p {
   margin-left: 25px;
 }
 
-.content {
-  width: 75%;
-  display: inline-block;
-  margin-left: 20px;
-}
-/* the stylings for "search-engine-optimization", "online-reputation-management",
- "social-media-marketing", and the respective classes for images and h2 within them were
- all consolidated into three classes, given that every member consolidated was identical
- to the others with which it was consolidated. Classes were renamed here and in
- the HTML.
- They have also been moved so as to appear under the .content, under which they fall in the HTML*/
-.services {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-.services img {
+.content article img {
   max-height: 200px;
 }
 
-.services h2 {
+.content article h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
-
+/*Class Selector--for the section on the right side of the page below the header*/
 .benefits {
   margin-right: 20px;
   padding: 20px;
@@ -108,19 +102,15 @@ p {
   float: right;
   width: 20%;
   height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #2589bd;
 }
-/*Calibri needed quotes around it.*/
+
 .benefits article {
   margin-bottom: 32px;
   color: #ffffff;
 }
-/* the stylings for "benefit-****", and the respective classes for images and h2 within them were
- all consolidated into three classes, given that every member consolidated was identical
- to the others with which it was consolidated. Classes were renamed here and in
- the HTML.*/
+
 .benefits article h3 {
   margin-bottom: 10px;
   text-align: center;
@@ -131,7 +121,7 @@ p {
   margin: 10px auto;
   max-width: 150px;
 }
-
+/*ELement Selector--footer of webpage*/
 footer {
   padding: 30px;
   clear: both;
@@ -143,4 +133,3 @@ footer {
 footer h2 {
   font-size: 20px;
 }
-/*As with header above, the class was eliminated since it was redundant in the HTML*/

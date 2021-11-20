@@ -6,7 +6,7 @@ The file contains an HTML document and CSS document, as well as additional image
 
 ## Structure
 
-```shell
+```
 |-- Develop
     |-- assets
     |-- index.html
