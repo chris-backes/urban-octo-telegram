@@ -7,13 +7,12 @@ The file contains an HTML document and CSS document, as well as additional image
 ## Structure
 
 ```
-|-- Develop
-    |-- assets
-    |-- index.html
-        |-- css
-            |--stlye.css
-        |-- images
-            |-- four .jpg files and three .png files (and an addtional .jpeg /for the READ me file)
+|-- assets
+|-- index.html
+    |-- css
+        |--stlye.css
+    |-- images
+        |-- four .jpg files and three .png files (and an addtional .jpeg /for the READ me file)
 ```
 
 ## Cloning the repo
