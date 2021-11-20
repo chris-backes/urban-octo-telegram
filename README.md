@@ -13,7 +13,7 @@ The file contains an HTML document and CSS document, as well as additional image
         |-- css
             |--stlye.css
         |-- images
-            |-- four .jpg files and three .png files (and an addtional .jpg /for the READ me file)
+            |-- four .jpg files and three .png files (and an addtional .jpeg /for the READ me file)
 ```
 
 ## Cloning the repo
