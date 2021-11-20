@@ -53,4 +53,4 @@ To:
 
 ## Screenshot
 
-![Horiseon Screenshot](./Develop/assets/images/website.jpeg)
+![Horiseon Screenshot](./assets/images/website.jpeg)
